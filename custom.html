@@ -1,0 +1,50 @@
+<html>
+
+<head>
+	<link rel="stylesheet" href="index.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<header>
+		<div class="header-inner">
+			<img src="./images/pumpkin.png" class="pumpkin-img" alt="Pumpkin Logo">
+			<div>
+				<h2>Pumpkin's Purrfect...</h2>
+				<h1>Meme Picker</h1>
+			</div>
+			<a id="original-version-btn" class="switch-version-btn" href="original.html"> Go to original version</a>
+		</div>
+	</header>
+	<main>
+		<h4 >This version was made by Hanna Shymanovych</h4>
+
+		<label for="emotion-options" class="custom-select-text">Select Your Current Emotion</label>
+
+		<div class="controls-container">
+			<div id="emotion-options-div">
+				<select name="emotions" id="emotion-options">
+					<!-- Options -->
+				</select>
+			</div>
+
+			<div class="gifs-check">
+				<label for="gifs-only-option" class="gifs-check-label">Animated GIFs only</label>
+				<input type="checkbox" id="gifs-only-option">
+			</div>
+			<button class="get-image-btn" id="get-image-btn">Get Image</button>
+		</div>
+
+	</main>
+		<div class="meme-modal meme-modal-custom" id="meme-modal">
+			<button class="meme-modal-close-btn" id="meme-modal-close-btn" aria-label="Close">X</button>
+			<div id="meme-modal-inner">
+				<!-- Memes -->
+			</div>
+		</div>
+	<script src="custom.js" type="module"></script>
+</body>
+
+</html>
